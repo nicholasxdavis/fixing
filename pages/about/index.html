@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPY1G645JS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -30,7 +29,7 @@
     <meta property="twitter:description" content="Learn about Blacnova Development - crafting tailored digital solutions for modern businesses.">
     <meta property="twitter:image" content="https://www.blacnova.com/img/hero.png">
 
-    <link rel="icon" href="../img/bn.png" type="image/png">
+    <link rel="icon" href="../../ui/img/bn.png" type="image/png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +39,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/css/styles.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -143,14 +142,13 @@
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../index.html" class="flex items-center">
-                        <img src="../img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20">
+                    <a href="../../index.html" class="flex items-center">
+                        <img src="../../ui/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20">
                     </a>
                 </div>
                 
                 <nav class="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
                     <div class="flex space-x-8">
-                        <!-- Services Dropdown -->
                         <div class="relative group" x-data="{ open: false, activeCategory: 'development' }" @mouseenter="open = true" @mouseleave="open = false">
                             <button class="nav-link text-white hover:text-gray-300 transition-colors font-medium flex items-center">
                                 Our Services
@@ -203,8 +201,7 @@
                             </div>
                         </div>
 
-                       <!-- Tools Dropdown Integrated Here -->
-<div class="relative group" x-data="{ open: false, activeCategory: 'web' }" @mouseenter="open = true" @mouseleave="open = false">
+                       <div class="relative group" x-data="{ open: false, activeCategory: 'web' }" @mouseenter="open = true" @mouseleave="open = false">
     <button class="nav-link text-white hover:text-gray-300 transition-colors font-medium flex items-center">
         Tools
         <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -212,7 +209,6 @@
         </svg>
     </button>
     
-    <!-- Dropdown Panel -->
     <div x-show="open" x-transition:enter="transition ease-out duration-200" 
          x-transition:enter-start="opacity-0 translate-y-1" 
          x-transition:enter-end="opacity-100 translate-y-0" 
@@ -222,7 +218,6 @@
          class="absolute left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 text-gray-800"
          @mouseenter="open = true" @mouseleave="open = false" style="display: none;">
         <div class="grid grid-cols-3">
-            <!-- Categories Column -->
             <div class="col-span-1 bg-gray-50 p-4">
                 <h3 class="font-medium text-gray-900 mb-3">Categories</h3>
                 <ul class="space-y-2">
@@ -250,9 +245,7 @@
                 </ul>
             </div>
             
-            <!-- Tools Column -->
             <div class="col-span-2 p-4">
-                <!-- Developer Tools -->
                 <div x-show="activeCategory === 'devtools'" class="space-y-3" style="display: none;">
                     <h4 class="font-medium text-gray-900 mb-2">Developer Tools</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -261,7 +254,6 @@
                     </a>
                 </div>
                 
-                <!-- Design Tools -->
                 <div x-show="activeCategory === 'design'" class="space-y-3" style="display: none;">
                     <h4 class="font-medium text-gray-900 mb-2">Design Tools</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -274,7 +266,6 @@
                     </a>
                 </div>
                 
-                <!-- Web Utilities -->
                 <div x-show="activeCategory === 'web'" class="space-y-3">
                     <h4 class="font-medium text-gray-900 mb-2">Web Utilities</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -295,14 +286,14 @@
     </div>
 </div>
 
-                        <a href="../about/index.html" class="nav-link text-white hover:text-gray-300 transition-colors">About Us</a>
-                        <a href="../index.html#contact" class="nav-link text-white hover:text-gray-300 transition-colors">Contact Us</a>
-                        <a href="../index.html#quote" class="nav-link text-white hover:text-gray-300 transition-colors">Get Quote</a>
+                        <a href="index.html" class="nav-link text-white hover:text-gray-300 transition-colors">About Us</a>
+                        <a href="../../index.html#contact" class="nav-link text-white hover:text-gray-300 transition-colors">Contact Us</a>
+                        <a href="../../index.html#quote" class="nav-link text-white hover:text-gray-300 transition-colors">Get Quote</a>
                     </div>
                 </nav>
                 
                 <div class="hidden md:flex items-center">
-                    <a href="dashboard.blacnova.net" class="btn-primary px-6 py-2 rounded-3xl transition-all font-medium hover:bg-opacity-90">Dashboard</a>
+                    <a href="https://dashboard.blacnova.net" class="btn-primary px-6 py-2 rounded-3xl transition-all font-medium hover:bg-opacity-90">Dashboard</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white" aria-label="Open menu">
@@ -320,10 +311,10 @@
         </div>
         
         <nav class="flex flex-col space-y-6">
-            <a href="../index.html#services" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Our Services</a>
-            <a href="../about/index.html" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">About Us</a>
-            <a href="../index.html#contact" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Contact Us</a>
-            <a href="../index.html#quote" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Get Quote</a>
+            <a href="../../index.html#services" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Our Services</a>
+            <a href="index.html" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">About Us</a>
+            <a href="../../index.html#contact" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Contact Us</a>
+            <a href="../../index.html#quote" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Get Quote</a>
             <a href="https://dashboard.blacnova.net/" class="btn-primary px-6 py-3 rounded-3xl transition-all text-center mt-4 font-medium hover:bg-opacity-90">Dashboard</a>
         </nav>
     </div>
@@ -331,13 +322,11 @@
     <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-70 z-40 hidden"></div>
     
     <main class="mt-24 bg-white poppins-font-section">
-        <!-- Hero Section -->
-<section class="py-20 bg-cover bg-center" style="background-image: url('../img/social.png'); background-position: center -30px;">
+        <section class="py-20 bg-cover bg-center" style="background-image: url('../../ui/img/social.png'); background-position: center -30px;">
     <div class="container mx-auto px-6 max-w-6xl">
         <div class="text-center mb-16 scroll-animate" data-animation="animate__fadeInDown">
-             <!-- Icon Container -->
- <div class="flex justify-center mb-2">
-  <img src="../img/bn_orange.png" alt="Blacnova Logo" class="w-12 h-12 object-contain">
+             <div class="flex justify-center mb-2">
+  <img src="../../ui/img/bn_orange.png" alt="Blacnova Logo" class="w-12 h-12 object-contain">
 </div>
 
             <span class="inline-block mb-4 text-sm font-medium tracking-wider text-[#d4611c] uppercase">Our Story</span>
@@ -351,7 +340,6 @@
     </div>
 </section>
 
-        <!-- Values Section -->
         <section class="py-20 bg-[#fafafa]">
     <div class="container mx-auto px-6 max-w-6xl">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -393,12 +381,11 @@
 
         
 
-       <!-- Community Work Section -->
-<section class="py-20 bg-[#fff]">
+       <section class="py-20 bg-[#fff]">
     <div class="container mx-auto px-6 max-w-6xl">
         <div class="text-center mb-16 scroll-animate" data-animation="animate__fadeInDown">
 <div class="flex justify-center mb-4">
-  <img src="../img/zia-symbol.png" alt="Blacnova Logo" class="w-12 h-12 object-contain">
+  <img src="../../ui/img/zia-symbol.png" alt="Blacnova Logo" class="w-12 h-12 object-contain">
 </div>
 
             <span class="inline-block mb-4 text-sm font-medium tracking-wider text-[#d4611c] uppercase">Our Impact</span>
@@ -409,7 +396,6 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Chef Becky -->
             <div class="project-card scroll-animate" data-animation="animate__fadeInUp" data-delay="0.1s">
                 <div class="h-48 bg-gray-200 overflow-hidden">
                     <div class="w-full h-full bg-forge-100 flex items-center justify-center">
@@ -423,7 +409,6 @@
                 </div>
             </div>
             
-            <!-- Adovada de Mesilla -->
             <div class="project-card scroll-animate" data-animation="animate__fadeInUp" data-delay="0.2s">
                 <div class="h-48 bg-gray-200 overflow-hidden">
                     <div class="w-full h-full bg-forge-100 flex items-center justify-center">
@@ -437,7 +422,6 @@
                 </div>
             </div>
             
-            <!-- Chios Cleaning -->
             <div class="project-card scroll-animate" data-animation="animate__fadeInUp" data-delay="0.3s">
                 <div class="h-48 bg-gray-200 overflow-hidden">
                     <div class="w-full h-full bg-forge-100 flex items-center justify-center">
@@ -451,7 +435,6 @@
                 </div>
             </div>
             
-            <!-- FARMesilla -->
             <div class="project-card scroll-animate" data-animation="animate__fadeInUp" data-delay="0.4s">
                 <div class="h-48 bg-gray-200 overflow-hidden">
                     <div class="w-full h-full bg-forge-100 flex items-center justify-center">
@@ -469,7 +452,6 @@
 </section>
 
 
-        <!-- Project Details Section -->
         <section class="py-20 bg-[#fafafa]">
             <div class="container mx-auto px-6 max-w-6xl">
                 <div class="mb-16 scroll-animate" data-animation="animate__fadeInDown">
@@ -477,7 +459,6 @@
                     <h2 class="text-3xl font-medium mb-6 text-gray-900">Making a Difference Through Technology</h2>
                 </div>
                 
-                <!-- Chef Becky Case Study -->
                 <div class="mb-16 scroll-animate" data-animation="animate__fadeInUp">
                     <h3 class="text-2xl font-medium mb-4 text-gray-900">Chef Becky – Digital Catering Made Simple</h3>
                     <p class="text-gray-600 mb-6">
@@ -502,7 +483,6 @@
                     </div>
                 </div>
                 
-                <!-- Adovada de Mesilla Case Study -->
                 <div class="mb-16 scroll-animate" data-animation="animate__fadeInUp">
                     <h3 class="text-2xl font-medium mb-4 text-gray-900">Adovada de Mesilla – Highlighting Local Culinary Talent</h3>
                     <p class="text-gray-600 mb-6">
@@ -528,17 +508,14 @@
                     </div>
                 </div>
                 
-                <!-- Additional case studies would follow the same pattern -->
-            </div>
+                </div>
         </section>
 
       
-       <!-- Team Section -->
-<section class="py-20 bg-[#fff]">
+       <section class="py-20 bg-[#fff]">
     <div class="container mx-auto px-6 max-w-6xl">
         <div class="text-center mb-16 scroll-animate" data-animation="animate__fadeInDown">
- <!-- Icon Container -->
-      <div class="flex justify-center mb-4">
+ <div class="flex justify-center mb-4">
         <i class="fas fa-users text-[#d4611c] text-4xl"></i>
       </div>
    
@@ -570,7 +547,7 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-center scroll-animate" data-animation="animate__fadeIn">
                 <a href="/" aria-label="Back to homepage">
-                    <img src="../img/bn.png" alt="Blacnova Development Icon" class="h-20 mx-auto">
+                    <img src="../../ui/img/bn.png" alt="Blacnova Development Icon" class="h-20 mx-auto">
                 </a>
             </div>
             <p class="text-center text-white/70 mt-4 scroll-animate" data-animation="animate__fadeIn" data-delay="0.2s">Founded in Las Cruces, New Mexico.</p>
@@ -580,7 +557,7 @@
         </div>
     </footer>
     
-    <script src="../js/ui.js"></script>
+    <script src="../../ui/js/ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -589,9 +566,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simmerjs@1.0.3/dist/shimmer.min.js"></script>
 
-    <script src="../js/BN-Cta.js"></script>
-    <script src="../js/BN-Contact.js"></script>
-    <script src="../js/BN-PageScroll.js"></script>
+    <script src="../../ui/js/BN-Cta.js"></script>
+    <script src="../../ui/js/BN-Contact.js"></script>
+    <script src="../../ui/js/BN-PageScroll.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

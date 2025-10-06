@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPY1G645JS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -30,7 +29,7 @@
     <meta property="twitter:description" content="Blacnova Development's Terms & Conditions, Privacy Policy, and Cookies Policy.">
     <meta property="twitter:image" content="https://www.blacnova.com/img/hero.png">
 
-    <link rel="icon" href="../img/bn.png" type="image/png">
+    <link rel="icon" href="../../ui/img/bn.png" type="image/png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +39,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/css/styles.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -155,14 +154,13 @@
         <div class="container mx-auto px-4">
             <div class="header-content flex justify-between items-center h-24">
                 <div class="flex items-center">
-                    <a href="../index.html" class="flex items-center">
-                        <img src="../img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20">
+                    <a href="../../index.html" class="flex items-center">
+                        <img src="../../ui/img/logo_white.png" alt="Blacnova Development Logo" class="logo h-20">
                     </a>
                 </div>
                 
                 <nav class="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
                     <div class="flex space-x-8">
-                        <!-- Services Dropdown -->
                         <div class="relative group" x-data="{ open: false, activeCategory: 'development' }" @mouseenter="open = true" @mouseleave="open = false">
                             <button class="nav-link text-white hover:text-gray-300 transition-colors font-medium flex items-center">
                                 Our Services
@@ -215,8 +213,7 @@
                             </div>
                         </div>
 
-                       <!-- Tools Dropdown Integrated Here -->
-<div class="relative group" x-data="{ open: false, activeCategory: 'web' }" @mouseenter="open = true" @mouseleave="open = false">
+                       <div class="relative group" x-data="{ open: false, activeCategory: 'web' }" @mouseenter="open = true" @mouseleave="open = false">
     <button class="nav-link text-white hover:text-gray-300 transition-colors font-medium flex items-center">
         Tools
         <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -224,7 +221,6 @@
         </svg>
     </button>
     
-    <!-- Dropdown Panel -->
     <div x-show="open" x-transition:enter="transition ease-out duration-200" 
          x-transition:enter-start="opacity-0 translate-y-1" 
          x-transition:enter-end="opacity-100 translate-y-0" 
@@ -234,7 +230,6 @@
          class="absolute left-1/2 -translate-x-1/2 mt-4 w-[600px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50 text-gray-800"
          @mouseenter="open = true" @mouseleave="open = false" style="display: none;">
         <div class="grid grid-cols-3">
-            <!-- Categories Column -->
             <div class="col-span-1 bg-gray-50 p-4">
                 <h3 class="font-medium text-gray-900 mb-3">Categories</h3>
                 <ul class="space-y-2">
@@ -262,9 +257,7 @@
                 </ul>
             </div>
             
-            <!-- Tools Column -->
             <div class="col-span-2 p-4">
-                <!-- Developer Tools -->
                 <div x-show="activeCategory === 'devtools'" class="space-y-3" style="display: none;">
                     <h4 class="font-medium text-gray-900 mb-2">Developer Tools</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -273,7 +266,6 @@
                     </a>
                 </div>
                 
-                <!-- Design Tools -->
                 <div x-show="activeCategory === 'design'" class="space-y-3" style="display: none;">
                     <h4 class="font-medium text-gray-900 mb-2">Design Tools</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -286,7 +278,6 @@
                     </a>
                 </div>
                 
-                <!-- Web Utilities -->
                 <div x-show="activeCategory === 'web'" class="space-y-3">
                     <h4 class="font-medium text-gray-900 mb-2">Web Utilities</h4>
                     <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-50 transition-colors">
@@ -308,8 +299,8 @@
 </div>
 
                         <a href="../about/index.html" class="nav-link text-white hover:text-gray-300 transition-colors">About Us</a>
-                        <a href="../index.html#contact" class="nav-link text-white hover:text-gray-300 transition-colors">Contact Us</a>
-                        <a href="../index.html#quote" class="nav-link text-white hover:text-gray-300 transition-colors">Get Quote</a>
+                        <a href="../../index.html#contact" class="nav-link text-white hover:text-gray-300 transition-colors">Contact Us</a>
+                        <a href="../../index.html#quote" class="nav-link text-white hover:text-gray-300 transition-colors">Get Quote</a>
                     </div>
                 </nav>
                 
@@ -332,10 +323,10 @@
         </div>
         
         <nav class="flex flex-col space-y-6">
-            <a href="../index.html#services" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Our Services</a>
+            <a href="../../index.html#services" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Our Services</a>
             <a href="../about/index.html" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">About Us</a>
-            <a href="../index.html#contact" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Contact Us</a>
-            <a href="../index.html#quote" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Get Quote</a>
+            <a href="../../index.html#contact" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Contact Us</a>
+            <a href="../../index.html#quote" class="nav-link text-white hover:text-gray-300 text-xl transition-colors">Get Quote</a>
             <a href="https://dashboard.blacnova.net/" class="btn-primary px-6 py-3 rounded-3xl transition-all text-center mt-4 font-medium hover:bg-opacity-90">Dashboard</a>
         </nav>
     </div>
@@ -355,7 +346,6 @@
             </div>
             
             <div class="flex flex-col lg:flex-row gap-8">
-                <!-- Navigation Sidebar -->
                 <div class="lg:w-1/4">
                     <div class="sticky top-32 legal-nav bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                         <h3 class="text-lg font-medium mb-4 text-gray-900">Legal Documents</h3>
@@ -368,12 +358,10 @@
                     </div>
                 </div>
                 
-                <!-- Content -->
                 <div class="lg:w-3/4">
                     <div class="bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
                         <div class="p-8 md:p-10 policy-content">
                             
-                            <!-- Terms & Conditions -->
                             <section id="terms" class="legal-section">
                                 <h2 class="text-3xl font-medium mb-6 text-gray-900">📜 Terms & Conditions</h2>
                                 <p class="text-gray-600 mb-8"><strong>Last Updated: September 5, 2025</strong></p>
@@ -459,7 +447,6 @@
                                 <p>These Terms are governed by the laws of the State of New Mexico, USA, regardless of conflict of law provisions.</p>
                             </section>
                             
-                            <!-- Privacy Policy -->
                             <section id="privacy" class="legal-section mt-16">
                                 <h2 class="text-3xl font-medium mb-6 text-gray-900">🔒 Privacy Policy</h2>
                                 <p class="text-gray-600 mb-8"><strong>Last Updated: September 5, 2025</strong></p>
@@ -509,7 +496,6 @@
                                 <p>If you access Blacnova outside the United States, you consent to having your data processed in the United States.</p>
                             </section>
                             
-                            <!-- Cookies Policy -->
                             <section id="cookies" class="legal-section mt-16">
                                 <h2 class="text-3xl font-medium mb-6 text-gray-900">🍪 Cookies Policy</h2>
                                 <p class="text-gray-600 mb-8"><strong>Last Updated: September 5, 2025</strong></p>
@@ -535,7 +521,6 @@
                                 <p>By continuing to use our services, you consent to the use of cookies.</p>
                             </section>
                             
-                            <!-- Contact Information -->
                             <section id="contact-info" class="legal-section mt-16">
                                 <h2 class="text-3xl font-medium mb-6 text-gray-900">📩 Contact Us</h2>
                                 
@@ -559,7 +544,7 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-center scroll-animate" data-animation="animate__fadeIn">
                 <a href="/" aria-label="Back to homepage">
-                    <img src="../img/bn.png" alt="Blacnova Development Icon" class="h-20 mx-auto">
+                    <img src="../../ui/img/bn.png" alt="Blacnova Development Icon" class="h-20 mx-auto">
                 </a>
             </div>
             <p class="text-center text-white/70 mt-4 scroll-animate" data-animation="animate__fadeIn" data-delay="0.2s">Founded in Las Cruces, New Mexico.</p>
@@ -569,7 +554,7 @@
         </div>
     </footer>
     
-    <script src="../js/ui.js"></script>
+    <script src="../../ui/js/ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -578,9 +563,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/shimmerjs@1.0.3/dist/shimmer.min.js"></script>
 
-    <script src="../js/BN-Cta.js"></script>
-    <script src="../js/BN-Contact.js"></script>
-    <script src="../js/BN-PageScroll.js"></script>
+    <script src="../../ui/js/BN-Cta.js"></script>
+    <script src="../../ui/js/BN-Contact.js"></script>
+    <script src="../../ui/js/BN-PageScroll.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
